@@ -6,13 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/11 | Hexo</title>
+  <title>用代理加速git clone | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;11&#x2F;index.html">
+  <meta name="description" content="全局代理socks5协议，1080端口修改成自己的本地代理端口git config –global http.proxy socks5:&#x2F;&#x2F;127.0.0.1:1080git config –global https.proxy socks5:&#x2F;&#x2F;127.0.0.1:1080 http协议，1081端口修改成自己的本地代理端口git config –global http.proxy http:&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用代理加速git clone">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;15&#x2F;%E7%94%A8%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9Fgit-clone&#x2F;index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="全局代理socks5协议，1080端口修改成自己的本地代理端口git config –global http.proxy socks5:&#x2F;&#x2F;127.0.0.1:1080git config –global https.proxy socks5:&#x2F;&#x2F;127.0.0.1:1080 http协议，1081端口修改成自己的本地代理端口git config –global http.proxy http:&#x2F;">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-15T08:35:57.951Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -149,76 +152,160 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-用代理加速git-clone" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      用代理加速git clone
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/15/%E7%94%A8%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9Fgit-clone/" class="archive-article-date">
+
+        
+        <a href="/2019/11/15/%E7%94%A8%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9Fgit-clone/" class="archive-article-date">
   	<time datetime="2019-11-15T08:27:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-15</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/15/%E7%94%A8%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9Fgit-clone/">用代理加速git clone</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="全局代理"><a href="#全局代理" class="headerlink" title="全局代理"></a>全局代理</h2><h4 id="socks5协议，1080端口修改成自己的本地代理端口"><a href="#socks5协议，1080端口修改成自己的本地代理端口" class="headerlink" title="socks5协议，1080端口修改成自己的本地代理端口"></a>socks5协议，1080端口修改成自己的本地代理端口</h4><p>git config –global http.proxy socks5://127.0.0.1:1080<br>git config –global https.proxy socks5://127.0.0.1:1080</p>
+<h4 id="http协议，1081端口修改成自己的本地代理端口"><a href="#http协议，1081端口修改成自己的本地代理端口" class="headerlink" title="http协议，1081端口修改成自己的本地代理端口"></a>http协议，1081端口修改成自己的本地代理端口</h4><p>git config –global http.proxy <a href="http://127.0.0.1:1081" target="_blank" rel="noopener">http://127.0.0.1:1081</a><br>git config –global https.proxy <a href="https://127.0.0.1:1081" target="_blank" rel="noopener">https://127.0.0.1:1081</a></p>
+<h2 id="仅对github代理"><a href="#仅对github代理" class="headerlink" title="仅对github代理"></a>仅对github代理</h2><h4 id="socks5协议，1080端口修改成自己的本地代理端口-1"><a href="#socks5协议，1080端口修改成自己的本地代理端口-1" class="headerlink" title="socks5协议，1080端口修改成自己的本地代理端口"></a>socks5协议，1080端口修改成自己的本地代理端口</h4><p>git config –global http.<a href="https://github.com.proxy" target="_blank" rel="noopener">https://github.com.proxy</a> socks5://127.0.0.1:1080<br>git config –global https.<a href="https://github.com.proxy" target="_blank" rel="noopener">https://github.com.proxy</a> socks5://127.0.0.1:1080</p>
+<h4 id="http协议，1081端口修改成自己的本地代理端口-1"><a href="#http协议，1081端口修改成自己的本地代理端口-1" class="headerlink" title="http协议，1081端口修改成自己的本地代理端口"></a>http协议，1081端口修改成自己的本地代理端口</h4><p>git config –global http.<a href="https://github.com.proxy" target="_blank" rel="noopener">https://github.com.proxy</a> <a href="http://127.0.0.1:1081" target="_blank" rel="noopener">http://127.0.0.1:1081</a><br>git config –global https.<a href="https://github.com.proxy" target="_blank" rel="noopener">https://github.com.proxy</a> <a href="https://127.0.0.1:1081" target="_blank" rel="noopener">https://127.0.0.1:1081</a></p>
+<h2 id="解除代理"><a href="#解除代理" class="headerlink" title="解除代理"></a>解除代理</h2><h4 id="–global-后加上–unset"><a href="#–global-后加上–unset" class="headerlink" title="–global 后加上–unset"></a>–global 后加上–unset</h4><p>git config –global –unset http.proxy<br>git config –global –unset https.proxy</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/11/15/%E7%94%A8%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9Fgit-clone/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/11/14/my-first-blog/" class="archive-article-date">
-  	<time datetime="2019-11-14T12:05:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-14</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/14/my-first-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">my first blog</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/11/14/my-first-blog/">my first blog</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -241,8 +328,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

@@ -151,6 +151,73 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-用代理加速git-clone" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/15/%E7%94%A8%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9Fgit-clone/">用代理加速git clone</a>
+    </h1>
+  
+
+        
+        <a href="/2019/11/15/%E7%94%A8%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9Fgit-clone/" class="archive-article-date">
+  	<time datetime="2019-11-15T08:27:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="全局代理"><a href="#全局代理" class="headerlink" title="全局代理"></a>全局代理</h2><h4 id="socks5协议，1080端口修改成自己的本地代理端口"><a href="#socks5协议，1080端口修改成自己的本地代理端口" class="headerlink" title="socks5协议，1080端口修改成自己的本地代理端口"></a>socks5协议，1080端口修改成自己的本地代理端口</h4><p>git config –global http.proxy socks5://127.0.0.1:1080<br>git config –global https.proxy socks5://127.0.0.1:1080</p>
+<h4 id="http协议，1081端口修改成自己的本地代理端口"><a href="#http协议，1081端口修改成自己的本地代理端口" class="headerlink" title="http协议，1081端口修改成自己的本地代理端口"></a>http协议，1081端口修改成自己的本地代理端口</h4><p>git config –global http.proxy <a href="http://127.0.0.1:1081" target="_blank" rel="noopener">http://127.0.0.1:1081</a><br>git config –global https.proxy <a href="https://127.0.0.1:1081" target="_blank" rel="noopener">https://127.0.0.1:1081</a></p>
+<h2 id="仅对github代理"><a href="#仅对github代理" class="headerlink" title="仅对github代理"></a>仅对github代理</h2><h4 id="socks5协议，1080端口修改成自己的本地代理端口-1"><a href="#socks5协议，1080端口修改成自己的本地代理端口-1" class="headerlink" title="socks5协议，1080端口修改成自己的本地代理端口"></a>socks5协议，1080端口修改成自己的本地代理端口</h4><p>git config –global http.<a href="https://github.com.proxy" target="_blank" rel="noopener">https://github.com.proxy</a> socks5://127.0.0.1:1080<br>git config –global https.<a href="https://github.com.proxy" target="_blank" rel="noopener">https://github.com.proxy</a> socks5://127.0.0.1:1080</p>
+<h4 id="http协议，1081端口修改成自己的本地代理端口-1"><a href="#http协议，1081端口修改成自己的本地代理端口-1" class="headerlink" title="http协议，1081端口修改成自己的本地代理端口"></a>http协议，1081端口修改成自己的本地代理端口</h4><p>git config –global http.<a href="https://github.com.proxy" target="_blank" rel="noopener">https://github.com.proxy</a> <a href="http://127.0.0.1:1081" target="_blank" rel="noopener">http://127.0.0.1:1081</a><br>git config –global https.<a href="https://github.com.proxy" target="_blank" rel="noopener">https://github.com.proxy</a> <a href="https://127.0.0.1:1081" target="_blank" rel="noopener">https://127.0.0.1:1081</a></p>
+<h2 id="解除代理"><a href="#解除代理" class="headerlink" title="解除代理"></a>解除代理</h2><h4 id="–global-后加上–unset"><a href="#–global-后加上–unset" class="headerlink" title="–global 后加上–unset"></a>–global 后加上–unset</h4><p>git config –global –unset http.proxy<br>git config –global –unset https.proxy</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/15/%E7%94%A8%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9Fgit-clone/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-my-first-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -171,7 +238,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="第一个blog"><a href="#第一个blog" class="headerlink" title="第一个blog"></a>第一个blog</h2><p>本博客用于记录学习过程。</p>
+<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h1>
       
 
       
